@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src = "js/perfect_startMove.js"></script>
+	<script src = "js/jquery-1.10.1.min.js"></script>
+	<script src = "js/jquery.cookie.js"></script>
+	<script src = "js/ajax.js"></script>
+	<script src = "js/shopcar.js"></script>
+	<script src = "js/tool.js"></script>
+	<script src = "js/singleProduct.js"></script>	
+	<script src = "js/single_banner.js"></script>
+
+
+</head>
+<body>
+	<div id = "header">
+		<div class = "wrap">
+		   <div class = "left">
+			   <p class="position">您的位置：中国 / RMB</p>
+			   <p class="language"><img src="img/eng.gif" alt="English"><img src="img/china.gif" alt="China"></p>
+		   </div>
+		   <img class = "logo" src="img/logo.jpg" alt="only">
+           <div class = "right">
+           		<p class="login">
+           		  	<a href="">登录</a> /
+           		  	<a href ="regist.html" class = "car_regist">注册</a>
+           		</p>
+           		<p class ="shopcar">
+	           		<a href ="">购物车
+	           		   [<span class="shopcarcount"> 0 </span>]
+	           		</a>
+           		</p>
+           		<p class = "search">
+	           		<input type="text" placeholder="搜索" id = "search_id">
+	           		<button></button>
+           		</p>
+           </div>
+		</div>
+	</div>
+	<div id = "nav">
+		<div class="wrap">
+				<a class = "car_only" href="only.html">首页<span>|</span></a>
+				<a href="allProduct.html" id ="first" class = "car_all">所有商品<span class = "first_1">|</span></a>
+				<a href="" id ="second">秋装新品<sup>22</sup><span class = "first_2">|</span></a>
+				<a href="" id ="third">秋装趋势<span class = "first_3">|</span></a>
+				<a href="" id ="fourth">热销推荐<span class = "first_4">|</span></a>
+				<a href="" id ="fivth">百变牛仔<span class = "first_5">|</span></a>
+				<a href="">近期活动<span>|</span></a>
+				<a href="">会员中心<span>|</span></a>
+				<ul class = "fixed_nav">
+					<li class = "nav1"><a href=""><span>购物车</span></a></li>
+					<li class = "nav2"><a href=""><span>客服热线</span></a></li>
+					<li class = "nav3"><a href=""><span>会员中心</span></a></li>
+					<li class = "nav4" style="display:none"><a href="#header"><span>返回顶部</span></a></li>
+					<div class = "showcar">
+						<p class = "top"></p>
+						<div class = "cookie">
+							<img src="img/product.png" alt="">
+							 	<p>针织上衣皮短裙两件套</p>
+							 	<p>价格 ：<span class="shopcarprice">0</span></p>
+							 	<p>件数 ：<span class="shopcarcount">0</span></p>	
+						</div>
+						<p class = "bottom"><button id = "lookcar">查看购物车并结算</button><button id = "clearcar">清空购物车</button></p>
+					</div>
+				</ul>
+		</div>
+	</div>
+
+	<div id = "notice2">
+		<div class="wrap">
+           <a href="only.html" class = "car_only"><span>首页</span></a> / <a href="allProduct.html" class = "car_all"><span>所有商品</span></a> / <a href="singleProduct.html"><span>针织上衣皮短裙两件套</span></a>
+           <div class = "single">
+           	   <div class="play" id="play">
+				    <ul class = "ul1">
+				    	<li class = "active1"><img src="img/imgsmall01.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall02.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall03.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall04.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall05.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall06.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall07.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall01.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall02.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall03.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall04.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall05.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall06.jpg" alt="" /></li>
+				        <li><img src="img/imgsmall07.jpg" alt="" /></li>
+				    </ul>
+					<ul class = "ul2">
+					    <span class='position_box'></span>
+				    	<li><img style = "z-index : 1" src="img/imgmiddle01.png" alt="" /></li>
+				        <li><img src="img/imgmiddle02.png" alt="" /></li>
+				        <li><img src="img/imgmiddle03.png" alt="" /></li>
+				        <li><img src="img/imgmiddle04.jpg" alt="" /></li>
+				        <li><img src="img/imgmiddle05.png" alt="" /></li>
+				        <li><img src="img/imgmiddle06.png" alt="" /></li>
+				        <li><img src="img/imgmiddle07.png" alt="" /></li>
+				    </ul>
+				</div>
+				<div class = "play_right">
+		           	 <ul class = "ul_right">
+		           	 	<li class = "title">针织上衣皮短裙两件套</li>
+		           	 	<li class = "title">ABEY SET DRESS(TRUE)</li>
+		           	 	<li class = "num">产品编号: 116307549</li>
+		           	 	<li class = "price">¥ 599.00</li>
+		           	 	<li class = "color">选择颜色<img class ="clother" src="img/clo_logo.jpg" alt=""></li>
+		           	 	<li class="select">
+		           	 	  <span>选择尺码：</span>
+			           	 	<select>
+			           	 		<option>155/76A/XS</option>	
+			           	 		<option>160/80A/S</option>
+			           	 		<option>165/84A/M</option>
+			           	 		<option>170/88A/L</option>
+			           	 		<option>175/92A/XL</option>
+			           	 	</select>
+			           	 	<img class = "selectbtn" src="img/select.gif" alt="">
+			           	 	<span>购买数量：</span><input type="text" placeholder="0" id = "buycount"/>
+		           	 	</li>
+		           	 	<li class = "incar"><button id = "shopcar1">加入购物车</button></li>
+		           	 	<li class = "intxt"><button>加入收藏夹</button></li>
+		           	 	<li class = "service"> 联系客服？</li>
+		           	 	<li class = "service_link"> 分享：<a href=""><img src="img/weixin2.gif" alt="" class = "ser_left"></a><span>|</span><a href=""><img src="img/weibo2.gif" alt="" class = "ser_right"></a></li>
+		           	 	<li class = "inform">
+		           	 		<p class = "inform_p">产品信息</p>
+		           	 		<p>【针织上衣面料：聚酯纤维97%氨纶3%】【短裙面料：聚氨酯（pu）人造革】 </p>
+		           	 	</li>
+		           	 	<li class = "inform">
+		           	 		<p class = "inform_p">温馨提示</p>
+		           	 		<p>模特所佩戴饰品、配件均为搭配使用,不做销售用途 </p>
+		           	 	</li>
+		           	 	<li class = "inform">
+		           	 		<p class = "inform_p">洗涤说明</p>
+		           	 		<p>针织衣服在洗涤前，拍去灰尘放在冷水中浸泡10～20分钟，拿出后挤干水分，放入洗衣粉溶液或肥皂片溶液中轻轻搓洗，再用清水漂洗。为了保证毛线的色泽，可在水中滴入2%的醋酸(食用醋亦可)来中和残留的肥皂。这样针织衫洗后变大的可能性就降低了。 </p>
+		           	 	</li>
+		           	 </ul>
+		           	 <ul class = "ul_big">
+		           	 	<li><img style = "z-index : 1" src="img/imgbig01.jpg" alt=""></li>
+		           	 	<li><img src="img/imgbig02.jpg" alt=""></li>
+		           	 	<li><img src="img/imgbig03.jpg" alt=""></li>
+		           	 	<li><img src="img/imgbig04.jpg" alt=""></li>
+		           	 	<li><img src="img/imgbig05.jpg" alt=""></li>
+		           	 	<li><img src="img/imgbig06.jpg" alt=""></li>
+		           	 	<li><img src="img/imgbig07.jpg" alt=""></li>		           	 	
+		           	 </ul>
+		         </div>
+           </div>
+		</div>
+		<div id = "everything" style="z-index:999">
+		      <img src="img/jiao.png" alt="" class = "one">
+			  <ul></ul>
+			  <ul></ul>
+			  <ul></ul>
+			  <ul></ul>
+			  <ul></ul>
+			  <ul></ul>
+			  <ul></ul>
+			  <ul></ul>
+        </div>
+        <div id = "newfall" style="z-index:999">
+        	  <img src="img/jiao.png" alt="" class = "one">
+			  <ul></ul>
+        </div> 
+           <div id = "tend" style="z-index:999">
+	          <img src="img/jiao.png" alt="">
+	     	  <ul></ul>
+	     	  <ul></ul>
+     	</div> 
+         <div id = "hot" style="z-index:999">
+	          <img src="img/jiao.png" alt="" >
+	          <ul></ul>
+     	</div>
+        <div id = "cowboy" style="z-index:999">
+           <img src="img/jiao.png" alt="">
+        	 <ul> 
+        	 </ul>
+        </div>
+    </div>	
+
+    <div id = "bigimg">
+    	<img src="img/single_img.gif" alt="">
+    </div>
+    
+
+   <div id = "imglink2">
+		<div class = "wrap">
+			<ul>
+				<li><a href=""><img src="img/fix1.jpg" alt=""></a></li>
+				<li><a href=""><img src="img/fix2.jpg" alt=""></a></li>
+				<li><a href=""><img src="img/fix3.jpg" alt=""></a></li>
+				<li><a href=""><img src="img/fix4.jpg" alt=""></a></li>
+				<li><a href=""><img src="img/fix5.jpg" alt=""></a></li>
+				<li class = "last1"><a href=""><img src="img/fix6.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id = "listlink">
+		<div class = "wrap">
+			<div class = "list_left">
+				<p class = "list_left_title">尽情体验无处不在！</p>
+				<img src="img/linklist1.jpg" alt="">
+				<button>扫描即刻进入ONLY APP</button>
+			</div>
+			<div class = "list_center">
+				<p class = "list_center_title">切勿错过精彩资讯！</p>
+				<p class = "list_center_des">通过电子订阅，了解最新的时尚信息、最潮的品牌，以及最新货品，跟上流行前沿的脚步，以及最新货品，跟上流行前沿的脚步！</p>
+				<div class ="list_search">
+					<input type="text" placeholder="输入电子邮箱" />
+					<button>订阅</button>
+				</div>
+				<div class = "imglink1">
+					<img src="img/linklogo1.jpg" alt="">
+					<img src="img/linklogo.jpg" alt="" class = "weixin">
+					<img src="img/weixin.png" alt="" class = "code">
+				</div>
+			</div>
+			<div class = "list_right">
+				<div class = "list_rigth_left">
+					<dl class = "dl_top">
+						<dt>会员中心</dt>
+						<dd><a href="">会员制度</a></dd>
+						<dd><a href="">常见问题</a></dd>
+						<dd><a href="">积分兑换</a></dd>
+					</dl>
+					<dl>
+						<dt>配送流程</dt>
+						<dd><a href="">配送说明</a></dd>
+						<dd><a href="">退货制度</a></dd>
+					</dl>
+					<dl>
+						<dt>关注我们</dt>
+						<dd><a href="">新浪微博</a></dd>
+						<dd class = "weixin"><a href="">公众微信</a></dd>
+						<dd><img src="img/weixin.png" alt="" class = "code"></dd>
+					</dl>
+				</div>
+				<div class = "list_rigth_right">
+					<dl  class = "dl_top">
+						<dt>关于我们</dt>
+						<dd><a href="">绫致时装</a></dd>
+						<dd><a href="">ONLY</a></dd>
+						<dd><a href="">工作机会</a></dd>
+					</dl>
+					<dl>
+						<dt>帮助中心</dt>
+						<dd><a href="">网站地图</a></dd>
+						<dd><a href="">网站声明</a></dd>
+						<dd><a href="">门店地址</a></dd>
+						<dd><a href="">联系我们</a></dd>
+						<dd><a href="">常见问题</a></dd>
+						<dd><img src="img/saleLogo.jpg"></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "nav2">
+	    <div class="wrap">
+				<a href="only.html" class = "car_only">首页<span>|</span></a>
+				<a href="">新品上架<span>|</span></a>
+				<a href="">所有商品<span>|</span></a>
+				<a href="">个性牛仔<span>|</span></a>
+				<a href="">时尚裙装<span>|</span></a>
+				<a href="">流行趋势<span>|</span></a>
+				<a href="">品牌故事<span>|</span></a>
+				<a href="">会员中心</a>
+		</div>
+	</div>
+	<div id = "footer">
+		<div class="wrap">
+			<a href=""><img src="img/jjLogo.jpg" alt=""></a>
+			<a href=""><img src="img/vmLogo.jpg" alt=""></a>
+			<a href=""><img src="img/selLogo.jpg" alt=""></a>
+			<a href=""><img src="img/besLOGO.jpg" alt="" class = "bes"></a>
+			<p>& copy2013 Bestseller.All Rights Reserved 津ICP备12007886号 - 3</p>
+			<p class = "p2">绫致时装(天津)有限公司</p>
+		</div>
+	</div>
+	<div id = "join">
+		<div id = "join1" style = "display:none">
+			<div class="wrap">
+				<img src="img/mt.png" alt="" class = "model">
+				<img src="img/deswe45.jpg" alt="" class = "joinlogo">
+				<div class = "join_right">
+					<a href="regist.html" class = "car_regist"><button>即刻注册</button></a>&nbsp;&nbsp;OR&nbsp;&nbsp; 
+					<button>立即登陆</button>
+					<div class = "mail">
+						<input type="text" placeholder="输入电子邮件，了解最新的时尚资讯">
+						<button class = "buy">订阅</button>
+					</div>
+				</div>
+				<button class = "del">×</button>
+			</div>
+		</div>
+	</div>
+	<div id ="show">
+	  <h3>成功添加购物车！</h3>
+	  <p class = "pp1"></p>
+	  <p class = "pp2"></p>
+	  <div class="shopcar_buttom">
+		  <span id="shopcar_buttom_left" href="">去购物车结算</span>
+		  <span id="shopcar_buttom_right" href="">继续购物</span>
+	  </div>
+	  <div id="popClose">×</div>
+	</div>
+</body>
+</html>
